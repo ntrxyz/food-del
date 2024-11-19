@@ -1,0 +1,52 @@
+.order-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.order-item-food, .order-item-name{
+    font-weight: 600;
+}
+
+.order-item-name{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.order-item-address{
+    margin-bottom: 10px;
+}
+
+.order-item select {
+    background-color: #ff7d00; /* Tomato background for the select box */
+    color: white; /* White text inside the select box */
+    border: 1px solid white; /* White border for better contrast */
+    width: max(10vw, 120px); /* Responsive width with a minimum size */
+    padding: 10px; /* Adds padding inside the select box */
+    font-size: 14px; /* Sets font size for the text */
+    font-weight: normal; /* Makes the text bold */
+    border-radius: 5px; /* Rounds the corners slightly */
+    outline: none; /* Removes the outline on focus */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+@media(max-width:1000px){
+    .order-item{
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 8px;
+    }
+    .order-item select{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .order-item img{
+        width: 40px;
+    }
+}
