@@ -29,10 +29,17 @@
  .footer-content-right h2 , .footer-content-center h2 {
     color: white;
 }
+
+.footer-content-left img {
+    max-width: 100%; /* Makes the logo responsive */
+    height: auto; /* Maintains aspect ratio */
+  
+}
 .footer-social-icons img{
     width:40px;
     margin-right: 15px;
 }
+
 
 .footer hr{
     width: 100%;
